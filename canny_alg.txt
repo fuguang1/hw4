@@ -1,0 +1,10 @@
+clear all;
+clc;
+I_3 = imread('test3_corrupt.pgm');
+I_4 = imread('test4 copy.bmp');
+I_3_edge = edge(I_3,'canny');
+I_4_edge = edge(I_4,'canny');
+subplot(2,2,1);imshow(I_3);title('origin');
+subplot(2,2,2);imshow(I_3_edge);title('canny');
+subplot(2,2,3);imshow(I_4);title('origin');
+subplot(2,2,4);imshow(I_4_edge);title('canny');
